@@ -7,25 +7,30 @@ We are going to combine the data to analyze the relationships between the drough
 ## Process
 
 ### Extract:
-* 
-
-
+* The data we used for our project were gathered from www.californiadata.gov/ and www.drought.gov/ as CSVs. We imported the CSVs into Python and created a dataframe for each CSV using the pandas library.
 
 ### Transform:
-
-
+* We filtered the dataframes to remove columns that were uniformally used from both the fire and drought dataframe. We also renamed some of the columns to be more meaningful and descriptive.
+* We formatted the dates on the fire dataframe using datetime formatting so that the dates could be compared to the dates in the drought dataframe.
+* We removed 4 rows from the fire dataframe because the years were invalid.
+* The 2 dataframes were then merged together using SQL LEFT JOIN to discover the drought condition during each fire in the dataframe that had a corresponding date.
 
 ### Load:
-
+* We loaded our merged dataframe into a single SQL table in PostgreSQL.
+* We ensured the column names matched the columns created in our Python notebook to validate the load of the dataframe into PostgreSQL.
 
 ### Analyze:
-
-
+* The LEFT JOIN accomplished listing all of the fires.
+* Null drought data on the right side of the table indicted that there were no drought conditions during some of the fires in the dataframe.
 
 ## Findings
-We chose this topic because Disneyland is a very well-known place worldwide, and we recognize that a lot of data can be found on the parks. We have tried through these datasets to find some informative insights about Disneyland, extract some conclusions from Disneyland reviews and make a sentiment analysis.
-
+* There were a large number of fire incidents that occurred without a corresponding drought conditions, which we found surprising.
+* 9,016 total fires in the database.
+  * 3,273 fires did not have a corresponding drought condition (36%).
+  * We suspect that we may need drought data to correspond to earlier fire data.
 
 
 ### Next Steps
-
+* Analyze if there is a correlation between the time of the year (months, specific dates) have a higher likelihood to have a fire with a corresponding drought condition.
+* Look deeper into the drought conditions by county to see what counties have been affected the most by droughts and if there are larger than average fires.
+* The analysis could also be expanded to look at other states in the US or countries around the world.
