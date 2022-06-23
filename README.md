@@ -4,28 +4,28 @@ For our group project we are going to explore the historical data on fires and d
 
 We are going to combine the data to analyze the relationships between the drought levels and the acres burned for each year. Then we will load the data into a PostgreSQL database.
 
-##Process
+## Process
 
-######Extract:
+###### Extract:
 * 
 
 
 
-######Transform:
+###### Transform:
 
 
 
-######Load:
+###### Load:
 
 
-######Analyze:
+###### Analyze:
 
 
 
-##Findings
+## Findings
 We chose this topic because Disneyland is a very well-known place worldwide, and we recognize that a lot of data can be found on the parks. We have tried through these datasets to find some informative insights about Disneyland, extract some conclusions from Disneyland reviews and make a sentiment analysis.
 
 
 
-######Next Steps
+###### Next Steps
 
