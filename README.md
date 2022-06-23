@@ -25,10 +25,10 @@ We are going to combine the data to analyze the relationships between the drough
 
 ## Findings
 * There were a large number of fire incidents that occurred without a corresponding drought conditions, which we found surprising.
-* 9,016 total fires in the database.
-  * 3,273 fires did not have a corresponding drought condition (36%).
-  * We suspect that we may need drought data to correspond to earlier fire data.
-
+  * 9,016 total fires in the database.
+  * The earliest reported drought condition in the data is from 2000.
+  * 6,791 fires occurred in 2000 or after, and 75% of these fires had a corresponding drought condition.
+  * The earliest fire in the dataset is from 1912.
 
 ### Next Steps
 * Analyze if there is a correlation between the time of the year (months, specific dates) have a higher likelihood to have a fire with a corresponding drought condition.
