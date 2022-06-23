@@ -6,19 +6,19 @@ We are going to combine the data to analyze the relationships between the drough
 
 ## Process
 
-###### Extract:
+### Extract:
 * 
 
 
 
-###### Transform:
+### Transform:
 
 
 
-###### Load:
+### Load:
 
 
-###### Analyze:
+### Analyze:
 
 
 
@@ -27,5 +27,5 @@ We chose this topic because Disneyland is a very well-known place worldwide, and
 
 
 
-###### Next Steps
+### Next Steps
 
